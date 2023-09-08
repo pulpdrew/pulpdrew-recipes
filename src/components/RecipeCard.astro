@@ -1,0 +1,23 @@
+---
+interface Props {
+	title: string;
+	time?: string;
+	imageUrl?: string;
+}
+
+const { title, time, imageUrl } = Astro.props;
+---
+
+<div class="bg-white shadow-md flex flex-col">
+	{ imageUrl ? 
+		<img class="h-60 w-full object-cover" src={imageUrl} /> :
+		<div class="h-60 w-full bg-slate-50 p-8 text-center text-neutral-400">This is a picture of food, trust me</div>
+	}
+	<div class="p-2 flex flex-col justify-between flex-grow">
+		<h2 class="text-xl">{title}</h2>
+		<div class="flex flex-row">
+			<p class="text-sm flex-grow">{time}</p>
+			<img src="/icons/right-arrow.svg" class="text-sm h-5">
+		</div>
+	</div>
+</div>
