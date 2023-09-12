@@ -1,16 +1,15 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 interface Props {
-	title: string;
-	time?: string;
-	imageUrl?: string;
+	recipe: CollectionEntry<'recipes'>
 }
 
-const { title, time, imageUrl } = Astro.props;
+const { recipe: { data: { title, time, imageUrl, letter }, slug } } = Astro.props;
 ---
 
-<div>
+<a href={`/recipes/${slug}`}>
 	<div class="w-8 h-6 shadow-md font-bold bg-cardstock paper-texture rounded-t-md">
-		<p class="text-center">G</p>
+		<p class="text-center">{letter || title.substring(0, 1)}</p>
 	</div>
 	<div class="shadow-md flex flex-col p-1 bg-cardstock hover:shadow-lg paper-texture">
 		{ imageUrl ? 
