@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes');
@@ -8,9 +8,52 @@ export async function getStaticPaths() {
   }));
 }
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as { entry: CollectionEntry<"recipes">};
 const { Content } = await entry.render();
 ---
 
-<h1>{entry.data.title}</h1>
-<Content />
+<!doctype html>
+<html lang="en" class="bg-cardstock-100 font-sans">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{entry.data.title}</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Farsan">
+	</head>
+	<body>
+    <div class="recipe-content">
+      <h1>{entry.data.title}</h1>
+      <Content />
+    </div>
+	</body>
+</html>
+
+<style is:global>
+
+	body {
+		font-family: 'Farsan', sans-serif;
+	}
+
+  .recipe-content {
+    @apply text-xl mx-auto p-4 md:max-w-2xl leading-8 pb-10;
+  }
+
+  .recipe-content li {
+    @apply ms-3;
+  }
+
+  .recipe-content ol > li {
+    @apply ms-6 list-decimal;
+  }
+
+  .recipe-content h1 {
+    @apply text-4xl pb-6 pt-4;
+  }
+
+  .recipe-content h3 {
+    @apply text-3xl py-3;
+  }
+</style>
