@@ -1,6 +1,7 @@
 ---
 title: Bibimbap Sauce
 time: 5 minutes
+imageUrl: /food-pictures/bibimbap.jpg
 ---
 
 ### Ingredients:

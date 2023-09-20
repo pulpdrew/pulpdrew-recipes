@@ -1,6 +1,7 @@
 ---
 title: Chili
 time: 2-4 hours
+imageUrl: /food-pictures/chili.jpg
 ---
 
 ### Ingredients:

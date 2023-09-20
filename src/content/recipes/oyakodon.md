@@ -1,6 +1,7 @@
 ---
 title: Oyakodon
 time: 20 minutes
+imageUrl: /food-pictures/oyakodon.jpg
 ---
 
 ### Ingredients:

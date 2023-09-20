@@ -1,6 +1,8 @@
 ---
 title: Pork Carnitas
 time: 8 hours
+letter: C
+imageUrl: /food-pictures/carnitas-arepas.jpg
 ---
 
 ### Ingredients:
