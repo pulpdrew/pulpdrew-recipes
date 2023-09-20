@@ -8,13 +8,13 @@ const { recipe: { data: { title, time, imageUrl, letter }, slug } } = Astro.prop
 ---
 
 <a href={`/recipes/${slug}`}>
-	<div class="w-8 h-6 shadow-md font-bold bg-cardstock paper-texture rounded-t-md">
+	<div class="w-8 h-6 shadow-md font-bold bg-cardstock rounded-t-md">
 		<p class="text-center">{letter || title.substring(0, 1)}</p>
 	</div>
-	<div class="shadow-md flex flex-col p-1 bg-cardstock hover:shadow-lg paper-texture">
+	<div class="shadow-md flex flex-col p-1 bg-cardstock hover:shadow-lg">
 		{ imageUrl ? 
 			<img class="h-60 w-full object-cover" src={imageUrl} /> :
-			<div class="h-60 w-full bg-slate-50 p-8 text-center text-neutral-400">This is a picture of food, trust me</div>
+			<div class="h-60 w-full bg-cardstock-100 p-8 text-center text-neutral-400">Drew forgot to take a picture. Shame.</div>
 		}
 		<div class="p-2 flex flex-col justify-between flex-grow">
 			<h2 class="text-2xl">{title}</h2>
