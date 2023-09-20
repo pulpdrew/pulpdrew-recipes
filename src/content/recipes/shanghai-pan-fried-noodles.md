@@ -4,8 +4,6 @@ time: 30 minutes
 imageUrl: /food-pictures/shanghai-noodles.jpg
 ---
 
-<img src="/_public/shanghai-noodles.jpg" alt="Shanghai Pan Fried Noodles Image" width="300"/>
-
 ### Ingredients:
 
 #### Pork and Marinade:

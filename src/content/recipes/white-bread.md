@@ -4,8 +4,6 @@ time: 2 hours
 imageUrl: /food-pictures/white-bread.jpg
 ---
 
-<img src="/_public/white-bread.jpg" alt="White Bread Image" width="300"/>
-
 ### Ingredients:
 
 - 3 cups flour (Bread flour for best results, but All Purpose will work)
