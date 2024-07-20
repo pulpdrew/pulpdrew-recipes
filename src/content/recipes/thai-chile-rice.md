@@ -1,13 +1,14 @@
 ---
 title: Basil Chile Fried Rice
 time: 45 minutes
+imageUrl: /food-pictures/chile-rice.jpg
 ---
 
 ### Ingredients:
 
-- 1.5 cups rice
+- 1.5 cups rice (dry)
 - 1 lb boneless chicken breast or thigh, cut into small pieces.
-- 1.5 Tbsp Thai Chili Paste (in Soya Bean Oil)
+- 1.5 Tbsp Thai Chili Paste (nam prik pao)
 - 1 Tbsp fish sauce
 - 2 Tbsp soy sauce
 - 3-5 Cloves of garlic, minced or ground into paste
