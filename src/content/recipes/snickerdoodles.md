@@ -1,6 +1,7 @@
 ---
 title: Snickerdoodles
 time: 1 hours
+imageUrl: /food-pictures/snickerdoodles.jpg
 ---
 
 ### Ingredients:
